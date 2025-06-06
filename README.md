@@ -1,6 +1,6 @@
 # UsersAda
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.1.
+Este proyecto es para la presentacion de una prueba tecnica para la compañia ADA S.A
 
 ## Development server
 
