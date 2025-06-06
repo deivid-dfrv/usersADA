@@ -1,5 +1,5 @@
-<section class="container-list">
-    <div class="">
+<section class="list">
+    <div class="list__header">
         <app-search (searchText)="searchUser($event)"></app-search>
     </div>
     <table class="table">
@@ -20,7 +20,7 @@
                     <td class=""> {{item.phone}}</td>
                     <td class=""> {{item.email}}</td>
                     <td class=""> {{item.company.name}}</td>
-                </tr>|
+                </tr>
             }@empty {
                 <p>No hay registros que coincidan con el dato ingresado</p>
             }
