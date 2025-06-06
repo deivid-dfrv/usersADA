@@ -1,1 +1,29 @@
-<p>list works!</p>
+<section class="list">
+    <div class="list__header">
+        <app-search (searchText)="searchUser($event)"></app-search>
+    </div>
+    <table class="table">
+        <thead>
+            <tr class="table-header">
+                <th class="table-header__item">#</th>
+                <th class="table-header__item">Nombre</th>
+                <th class="table-header__item">Telefono</th>
+                <th class="table-header__item">Email</th>
+                <th class="table-header__item">Empresa</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (item of arrayUsers; track $index) {
+                <tr>
+                    <td class=""> {{item.id}}</td>
+                    <td class=""> {{item.name}}</td>
+                    <td class=""> {{item.phone}}</td>
+                    <td class=""> {{item.email}}</td>
+                    <td class=""> {{item.company.name}}</td>
+                </tr>
+            }@empty {
+                <p>No hay registros que coincidan con el dato ingresado</p>
+            }
+        </tbody>
+    </table>
+</section>

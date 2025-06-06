@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-white: #fafafa;
+  --color-white-bg: #ffffff;
+  --color-black: #333333;
+  --color-primary: #f1f1f2;
+  --color-secundary: #909090;
+  --color-success: #1d8649;
+  --color-warning: #e2c51e;
+  --color-error: #e71328;
+  --color-info: #2063e0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+}

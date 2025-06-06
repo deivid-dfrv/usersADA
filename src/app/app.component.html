@@ -1,1 +1,43 @@
-<router-outlet />
+<section class="app">
+  <nav class="app__nav">
+    <div class="app__logo">
+      <img
+        class="app__img"
+        src="https://srv-appeon-000-w23.adacsc.co/demo-prueba-angular/images/logo.svg"
+        alt=""
+      />
+      <p>Dashboard</p>
+    </div>
+
+    <div class="app__nav-items">
+      <button type="button" class="app__btn">Registrase</button
+      ><button type="button" class="app__btn app__btn-login">Ingresar</button>
+    </div>
+  </nav>
+  <article class="app__container">
+    <div class="app__sidebar">
+      <div class="app__sidebar-menu">
+        <div>
+          <img
+            class="app__img"
+            src="https://srv-appeon-000-w23.adacsc.co/demo-prueba-angular/images/lista.svg"
+            alt="logo item"
+          />
+          Listado
+        </div>
+        <div class="menu-item">
+          <img
+            class="app__img"
+            src="https://srv-appeon-000-w23.adacsc.co/demo-prueba-angular/images/editar.svg"
+            alt="logo item"
+          />
+          Formulario
+        </div>
+      </div>
+    </div>
+
+    <div class="app__content">
+      <router-outlet />
+    </div>
+  </article>
+</section>
